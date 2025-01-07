@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .flex-child {
+    min-width: 90px;
+} */
+
+/* .flex-grow {
+    flex-grow: 4;
+} */
+
+/* .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+} */
+
+/* .color_red {
+    color: red;
+} */
+
+header {
+    border: 0px solid;
+    margin: 0px;
+    background-color: antiquewhite;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+    position: fixed;
+    justify-content: space-around;
+    box-sizing: border-box;
+    height: 6rem;
+    width: 100%;
+}
+
+.main div {
+    max-width: 800px;
+    margin: auto;
+}
+
+.logo {
+    display: flex;
+    padding: 1rem;
+    border: 1px solid;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.titrePrincipal {
+    display: flex;
+    border: 1px solid;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav {
+    border: 1px solid;
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: beige;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    border-radius: 10px;
+    background-color: aqua;
+}
+
+.main {
+    border: 0px solid;
+    background-color: grey;
+    margin: 0%;
+    padding: 1rem;
+    display: flex;
+    position: relative;
+    height: 100%;
+    flex-direction: column;
+    align-content: space-between;
+    top: 6rem;
+    height: 4000px;
+    gap: 2rem;
+    width: 50%;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+.Présentation {
+    width: 90%;
+    height: auto;
+    background-color: rgb(229, 229, 121);
+    border: none;
+    
+}
+
+.Banderole {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    border: solid 0;
+    padding: 0;
+    background-color: red;
+    width: 100%;
+    z-index: -1;
+    top: 25%;
+    height: 20%;
+    gap: 50%;
+}
+
+div {
+    border: 2px solid;
+    margin: 0px;
+    background-color: beige;
+    justify-content: space-around;
+    
+    
+}
+
+footer {
+    border: 0px solid;
+    background-color: brown;
+    margin: 0px;
+    display: flex;
+    bottom: 0%;
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    z-index: 3;
+    flex-direction: row;
+    gap: 65%;
+    justify-content: center;
+}
+
+/* .flex-shrink-1 {
+    flex-shrink: 1;
+}
+
+.flex-shrink-2 {
+    flex-shrink: 2;
+}
+
+.flex-shrink-3 {
+    flex-shrink: 3;
+} */
