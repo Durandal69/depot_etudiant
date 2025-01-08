@@ -23,17 +23,19 @@
     color: red;
 } */
 
+
+
 header {
-    border: 0px solid;
+    border: 0px solid;    /* sans le solid, rien ne s'affiche, à ne pas oublier ici ou ailleurs où j'en ai besoin */
     margin: 0px;
     background-color: antiquewhite;
     padding: 1rem;
     display: flex;
     flex-direction: row;
-    z-index: 2;
+    z-index: 4;
     position: fixed;
     justify-content: space-around;
-    box-sizing: border-box;
+    box-sizing: border-box;     /* ça me permet d'avoir la div qui complète la page */
     height: 6rem;
     width: 100%;
 }
@@ -76,11 +78,14 @@ nav ul {
     gap: 2rem;
     text-decoration: none;
     box-sizing: border-box;
+    background-color: beige;
 }
 
 nav a {
     text-decoration: none;
     color: black;
+    background-color: beige;
+    
 }
 
 nav a:hover {
@@ -104,6 +109,25 @@ nav a:hover {
     width: 50%;
     margin-left: 50%;
     transform: translate(-50%);
+    z-index: 3;
+}
+
+.background_tokyo {
+    border: solid 0px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    position: fixed;
+    z-index: 0;
+    height: fit-content;
+    width: fit-content;
+    background-image: url("../depot_etudiant/background_tokyo.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+img {
+    
 }
 
 .Présentation {
@@ -120,9 +144,9 @@ nav a:hover {
     position: fixed;
     border: solid 0;
     padding: 0;
-    background-color: red;
+    background-color: lightsalmon;
     width: 100%;
-    z-index: -1;
+    z-index: 2;
     top: 25%;
     height: 20%;
     gap: 50%;
