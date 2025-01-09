@@ -25,11 +25,12 @@ git commit -m "message de sauvegarde"
 Pour envoyer les fichiers sur un serveur distant Github, on utilise la commande :
 ```sh
 git remote add origin https://<monpseudo>:<token>@github.com/Durandal69/ISITECH-2024-2025-B1.git
+git remote add origin https://Durandal69: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@github.com/Durandal69/ISITECH-2024-2025-B1.git
 ```
 puis
 ```sh
 git push -u origin main
 ```
-
+git branch -M main
 
 

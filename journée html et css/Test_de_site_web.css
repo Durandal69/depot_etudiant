@@ -121,13 +121,16 @@ nav a:hover {
     z-index: 0;
     height: fit-content;
     width: fit-content;
-    background-image: url("../depot_etudiant/background_tokyo.jpg");
-    background-size: cover;
-    background-position: center;
 }
 
-img {
-    
+body {
+    background-image: url("background_tokyo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
 }
 
 .Présentation {
