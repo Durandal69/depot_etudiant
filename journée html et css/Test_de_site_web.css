@@ -82,7 +82,7 @@ nav {
     padding: 1rem;
     align-self: center;
     box-sizing: border-box;
-    background-color: beige;
+    background-color: rgb(223, 220, 212);
     align-content: center;
 }
 
@@ -95,13 +95,13 @@ nav ul {
     gap: 2rem;
     text-decoration: none;
     box-sizing: border-box;
-    background-color: beige;
+    background-color: rgb(223, 220, 212);
 }
 
 nav a {
     text-decoration: none;
     color: black;
-    background-color: beige;
+    background-color: rgb(223, 220, 212);
     
 }
 
@@ -118,31 +118,33 @@ html {
     margin: 0;
     display: flex;
     flex-direction: column;
+    scroll-padding-top: 17rem; /* Ajustez cette valeur en fonction de la hauteur de votre header, merci copilot pour cette fonction là */
 }
 
 main {
     flex: 1;
     display: flex;
     position: relative;
-
     margin-bottom: 0;
     z-index: 1;
 }
 
 .main {
     border: 0px solid;
-    background-color: grey;
-    margin: 0%;
+    background-color: rgb(173, 173, 173, 0);
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     padding: 1rem;
     display: flex;
     position: relative;
     height: 100%;
+    width: 75%;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: space-between;
-    height: 4000px;
+    /* height: 4000px; */
     z-index: 3;
-
+    gap: 3rem;
 }
 
 .photo {
@@ -154,8 +156,8 @@ main div {
     display: flex;
     position: relative;
     flex-direction: column;
-    width: 100%;
-    border: red 3px solid;
+    width: 90%;
+    border: rgb(0, 0, 0) 3px solid;
 }
 
 body {
@@ -172,10 +174,10 @@ body {
 }
 
 .Presentation {
-    top: 16rem;
+    /* top: 16rem; */
     width: 90%;
     height: auto;
-    background-color: rgb(229, 229, 121);
+    background-color: rgb(224, 224, 131);
     border: none;
     
 }
@@ -197,7 +199,7 @@ body {
 div {
     border: 2px solid;
     margin: 0px;
-    background-color: beige;
+    background-color: rgb(223, 220, 212);
 
     
     
@@ -210,7 +212,7 @@ div {
 footer {
     border: 0px solid;
     /* background-color: brown; */
-    margin-top: 0;
+    margin-top: 6rem;
     display: flex;
     width: 100%;
     height: auto;
