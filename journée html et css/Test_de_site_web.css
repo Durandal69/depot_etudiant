@@ -28,16 +28,22 @@
 header {
     border: 0px solid;    /* sans le solid, rien ne s'affiche, à ne pas oublier ici ou ailleurs où j'en ai besoin */
     margin: 0px;
-    background-color: antiquewhite;
+    border-bottom: 2px solid black;
+    background-color: rgb(173, 173, 173);
     padding: 1rem;
     display: flex;
     flex-direction: row;
     z-index: 4;
     position: fixed;
     justify-content: space-around;
+    gap: 10%;
     box-sizing: border-box;     /* ça me permet d'avoir la div qui complète la page */
-    height: 6rem;
+    height: 15rem;
     width: 100%;
+}
+
+header ~ .top { /*ici ça me permet d'avoir le top que je dois mettre après le header partout à ceux qui sont top*/
+    top : 15rem;
 }
 
 .main div {
@@ -49,8 +55,16 @@ header {
     display: flex;
     padding: 1rem;
     border: 1px solid;
+    height: 100%;
+    width: 13rem;
     flex-direction: column;
     justify-content: center;
+    background-image: url("photo_profil.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    overflow: hidden;
 
 }
 
@@ -58,6 +72,7 @@ header {
     display: flex;
     border: 1px solid;
     padding: 1rem;
+    align-self: center;
     flex-direction: column;
     justify-content: center;
 }
@@ -65,8 +80,10 @@ header {
 nav {
     border: 1px solid;
     padding: 1rem;
+    align-self: center;
     box-sizing: border-box;
     background-color: beige;
+    align-content: center;
 }
 
 nav ul {
@@ -89,8 +106,27 @@ nav a {
 }
 
 nav a:hover {
-    border-radius: 10px;
-    background-color: aqua;
+    /* border-radius: 10px;
+    background-color: aqua; */
+    opacity: 0.5;
+    filter: alpha(opacity=50);          /* Merci MDN pour cet exemple */
+    zoom: 1;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    position: relative;
+
+    margin-bottom: 0;
+    z-index: 1;
 }
 
 .main {
@@ -101,26 +137,25 @@ nav a:hover {
     display: flex;
     position: relative;
     height: 100%;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-content: space-between;
-    top: 6rem;
     height: 4000px;
-    gap: 2rem;
-    width: 50%;
-    margin-left: 50%;
-    transform: translate(-50%);
     z-index: 3;
+
 }
 
-.background_tokyo {
-    border: solid 0px;
-    margin: 0px;
-    padding: 0px;
+.photo {
+    width: 35%;
+    opacity: 0%;
+}
+
+main div {
     display: flex;
-    position: fixed;
-    z-index: 0;
-    height: fit-content;
-    width: fit-content;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    border: red 3px solid;
 }
 
 body {
@@ -129,11 +164,15 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
-.Présentation {
+.Presentation {
+    top: 16rem;
     width: 90%;
     height: auto;
     background-color: rgb(229, 229, 121);
@@ -141,7 +180,7 @@ body {
     
 }
 
-.Banderole {
+/* .Banderole {
     display: flex;
     flex-direction: row;
     position: fixed;
@@ -153,29 +192,42 @@ body {
     top: 25%;
     height: 20%;
     gap: 50%;
-}
+} */
 
 div {
     border: 2px solid;
     margin: 0px;
     background-color: beige;
-    justify-content: space-around;
+
     
     
 }
 
+/* .divFooter {
+    width: 50%;
+} */
+
 footer {
     border: 0px solid;
-    background-color: brown;
-    margin: 0px;
+    /* background-color: brown; */
+    margin-top: 0;
     display: flex;
-    bottom: 0%;
-    position: fixed;
     width: 100%;
-    height: 10%;
-    z-index: 3;
+    height: auto;
+    position: relative;
+    z-index: 2;
     flex-direction: row;
-    gap: 65%;
+    gap: 0;
+    justify-content: center;
+    clear: both;
+}
+
+footer div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap column;
+    padding: 1rem;
+    vertical-align: middle;
     justify-content: center;
 }
 
