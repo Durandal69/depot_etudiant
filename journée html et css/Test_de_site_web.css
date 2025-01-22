@@ -4,27 +4,6 @@
     box-sizing: border-box;
 }
 
-/* .flex-child {
-    min-width: 90px;
-} */
-
-/* .flex-grow {
-    flex-grow: 4;
-} */
-
-/* .container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-} */
-
-/* .color_red {
-    color: red;
-} */
-
-
-
 header {
     border: 0px solid;    /* sans le solid, rien ne s'affiche, à ne pas oublier ici ou ailleurs où j'en ai besoin */
     margin: 0px;
@@ -55,8 +34,8 @@ header ~ .top { /*ici ça me permet d'avoir le top que je dois mettre après le 
     display: flex;
     padding: 1rem;
     border: 1px solid;
-    height: 100%;
     width: 13rem;
+    height: 13rem;
     flex-direction: column;
     justify-content: center;
     background-image: url("photo_profil.jpg");
@@ -106,8 +85,6 @@ nav a {
 }
 
 nav a:hover {
-    /* border-radius: 10px;
-    background-color: aqua; */
     opacity: 0.5;
     filter: alpha(opacity=50);          /* Merci MDN pour cet exemple */
     zoom: 1;
@@ -135,14 +112,13 @@ main {
     margin-top: 3rem;
     margin-bottom: 3rem;
     padding: 1rem;
-    display: flex;
+    display: grid;
     position: relative;
     height: 100%;
     width: 75%;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: space-between;
-    /* height: 4000px; */
     z-index: 3;
     gap: 3rem;
 }
@@ -174,44 +150,20 @@ body {
 }
 
 .Presentation {
-    /* top: 16rem; */
     width: 90%;
     height: auto;
     background-color: rgb(224, 224, 131);
     border: none;
-    
 }
-
-/* .Banderole {
-    display: flex;
-    flex-direction: row;
-    position: fixed;
-    border: solid 0;
-    padding: 0;
-    background-color: lightsalmon;
-    width: 100%;
-    z-index: 2;
-    top: 25%;
-    height: 20%;
-    gap: 50%;
-} */
 
 div {
     border: 2px solid;
     margin: 0px;
-    background-color: rgb(223, 220, 212);
-
-    
-    
+    background-color: rgb(223, 220, 212); 
 }
-
-/* .divFooter {
-    width: 50%;
-} */
 
 footer {
     border: 0px solid;
-    /* background-color: brown; */
     margin-top: 6rem;
     display: flex;
     width: 100%;
@@ -232,15 +184,3 @@ footer div {
     vertical-align: middle;
     justify-content: center;
 }
-
-/* .flex-shrink-1 {
-    flex-shrink: 1;
-}
-
-.flex-shrink-2 {
-    flex-shrink: 2;
-}
-
-.flex-shrink-3 {
-    flex-shrink: 3;
-} */
